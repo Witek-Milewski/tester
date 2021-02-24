@@ -7,5 +7,5 @@
     
 <h2>Images</h2>
 <p>
-  <img src="img/login.png"  width="700" title="Login image">
+  <img src="login.png"  width="700" title="Login image">
 </p>

@@ -6,6 +6,6 @@
 <p>You must to write this line in consol to install Laravel folder <code>composer intsall</code></p>
     
 <h2>Images</h2>
-<p align="center">
-  <img src="img/login.png" width="350" title="Login image">
+<p>
+  <img src="img/login.png" width="700" title="Login image">
 </p>

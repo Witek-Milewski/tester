@@ -6,4 +6,4 @@
 <p>You must to write this line in consol to install Laravel folder <code>composer intsall</code></p>
     
 <h2>Images</h2>
-![Screenshot](https://github.com/Witek-Milewski/Tester/blob/main/img/login.png?raw=true)
+![Screenshot](/img/login.png)

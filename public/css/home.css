@@ -15,11 +15,14 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    min-width: 950px;
 }
 
 a {
+    height: 40vh;
     text-decoration: none;
     min-width: 40%;
+    position: relative;
 }
 
 img {
@@ -52,6 +55,9 @@ article {
 
 #templates {
     background-color: #FFADAD;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #templates:hover {
@@ -70,9 +76,18 @@ article {
 
 #settings {
     background-color: #BDB2FF;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #settings:hover {
     width: 110%;
     background-color: #ACA1EE;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        background: rgb(12, 173, 147);
+    }
 }

@@ -14,18 +14,41 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+
+
+
+// *** A U T H *** \\
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+// *** G E T *** \\
+
+
+// H O M E   C O N T R O L L E R
+Route::get('/', 'HomeController@redirect');
+
+Route::get('/home', 'HomeController@home');
 
 Route::get('/logout', 'HomeController@logout');
 
+
+// T E S T S   C O N T R O L L E R
 Route::get('/tests', 'TestsController@view');
 
+
+
+
+
+
+// *** P O S T *** \\
+
+
+// T E S T S   C O N T R O L L E R
 Route::post('/tests', 'TestsController@add');
 
 

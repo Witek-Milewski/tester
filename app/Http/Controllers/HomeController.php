@@ -22,11 +22,19 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function redirect()
     {
-        return view('home');
+        if(Auth::check()){
+            return redirect('/home');
+        }
+        else{
+            return redirect('/login');
+        }
     }
 
+    public function home(){
+        return view('home');
+    }
     public function logout()
     {
         Auth::logout();
